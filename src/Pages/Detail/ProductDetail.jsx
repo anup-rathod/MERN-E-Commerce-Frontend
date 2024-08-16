@@ -57,7 +57,7 @@ const ProductDetail = () => {
 
                 const { data } = await axios.post(`${process.env.REACT_APP_ADD_CART}`, { _id: product._id, quantity: productQuantity }, {
                     headers: {
-                        'Authorization': authToken
+                        'Authorization': authToken || "secretPass"
                     }
                 })
                 setCart(data)
@@ -76,7 +76,7 @@ const ProductDetail = () => {
             try {
                 const { data } = await axios.post(`${process.env.REACT_APP_ADD_WISHLIST}`, { _id: product._id }, {
                     headers: {
-                        'Authorization': authToken
+                        'Authorization': authToken || "secretPass"
                     }
                 })
                 setWishlistData(data)
@@ -96,8 +96,8 @@ const ProductDetail = () => {
 
         const data = {
             text: product.name,
-            title: "e-shopit",
-            url: `https://e-shopit.vercel.app/Detail/type/${cat}/${id}`
+            title: "shreeji",
+            url: `https://5000/Detail/type/${cat}/${id}`
         }
         if (navigator.canShare && navigator.canShare(data)) {
             navigator.share(data);
@@ -112,19 +112,19 @@ const ProductDetail = () => {
         setSimilarProduct(data)
     }
     let data = [];
-    if (cat === 'shoe') {
+    if (cat === 'Maharastrian') {
         data.push(product?.brand, product?.gender, product?.category)
     }
-    else if (cat === 'book') {
+    else if (cat === 'Oxidise') {
         data.push(product.author, product.category)
     }
-    else if (cat === 'cloths') {
+    else if (cat === 'Saree') {
         data.push(product.category, cat)
     }
-    else if (cat === 'electronics') {
+    else if (cat === 'Choli') {
         data.push(product.category, cat)
     }
-    else if (cat === 'jewelry') {
+    else if (cat === 'Maharastrian') {
         data.push(cat)
     }
     const increaseQuantity = () => {

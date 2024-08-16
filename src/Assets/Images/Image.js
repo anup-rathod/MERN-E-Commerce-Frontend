@@ -3,9 +3,11 @@ export let profile = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838
 export let MaleCloth = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/Male-Cloth_fyyrzb.jpg';
 export let FemaleCloth = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838912/Cloths_kpwmp2.jpg';
 export let GroupCloth = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/Cloth-banner_ylavk9.jpg';
-export let Electronics = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/Electronics_lrjvlg.jpg';
-export let Jewelry = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/model-jwellery_qlcjog.jpg';
-export let Shoes = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/Shoe_e2yc1d.jpg';
-export let Books = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838761/Book_lc6ikb.jpg';
-export let EmptyCart = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838909/Cart_bk4xgl.jpg';
-export let customerReview = "https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/Review_bm6chw.jpg";
+export let Electronics = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/Cloth-banner_ylavk9.jpg';
+export let Jewelry = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/Cloth-banner_ylavk9.jpg';
+export let Shoes = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/Cloth-banner_ylavk9.jpg';
+export let Books = 'https://res.cloudinary.com/dxguqzge7/image/upload/v1682838911/Cloth-banner_ylavk9.jpg';
+export let EmptyCart = 'https://content3.jdmagicbox.com/comp/ahmedabad/z9/079pxx79.xx79.230209043557.x7z9/catalogue/shreeji-imitation-jewellery-ahmedabad-jewellery-showrooms-pk0o35go5s.jpg';
+export let logo = 'https://content3.jdmagicbox.com/comp/ahmedabad/z9/079pxx79.xx79.230209043557.x7z9/catalogue/shreeji-imitation-jewellery-ahmedabad-jewellery-showrooms-pk0o35go5s.jpg';
+export let Maharastrian;
+export let Saree;

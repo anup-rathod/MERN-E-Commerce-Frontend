@@ -38,20 +38,20 @@ const SingleCategory = () => {
 
     const productFilter = []
 
-    if (cat === 'book') {
-        productFilter.push('All', 'Scifi', 'Business', 'Mystery', 'Cookbooks', 'Accessories', 'Price Low To High', 'Price High To Low', 'High Rated', 'Low Rated')
+    if (cat === 'Oxidis') {
+        productFilter.push('All', 'Oxidise Jewellery', 'Accessories', 'Price Low To High', 'Price High To Low', 'High Rated', 'Low Rated')
     }
-    else if (cat === 'cloths') {
-        productFilter.push('All', 'Men', 'Women', 'Price Low To High', 'Price High To Low', 'High Rated', 'Low Rated')
+    else if (cat === 'Saree') {
+        productFilter.push('All', 'Simple', 'Designer', 'Price Low To High', 'Price High To Low', 'High Rated', 'Low Rated')
     }
-    else if (cat === 'shoe') {
-        productFilter.push('All', 'Running', 'Football', 'Formal', 'Casual', 'Price Low To High', 'Price High To Low', 'High Rated', 'Low Rated')
+    else if (cat === 'Maharastrian') {
+        productFilter.push('All', 'Maharastrian', 'Simple', 'Price Low To High', 'Price High To Low', 'High Rated', 'Low Rated')
     }
-    else if (cat === 'electronics') {
-        productFilter.push('All', 'Monitor', 'SSD', 'HDD', 'Price Low To High', 'Price High To Low', 'High Rated', 'Low Rated')
+    else if (cat === 'Choli') {
+        productFilter.push('All', 'Gujarati Choli', 'Designer Choli', 'Price Low To High', 'Price High To Low', 'High Rated', 'Low Rated')
 
     }
-    else if (cat === 'jewelry') {
+    else if (cat === 'Oxidise') {
         productFilter.push('All')
 
     }

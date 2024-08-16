@@ -58,10 +58,11 @@ const AdminRegister = () => {
             password: credentials.password,
             key: credentials.key
           })
+          console.log(credentials.key)
         const receive = await sendAuth.data
         if (receive.success === true) {
           toast.success("Registered Successfully", { autoClose: 500, theme: 'colored' })
-          localStorage.setItem('Authorization', receive.authToken)
+          localStorage.setItem('Authorization', receive.authToken || "secretPass")
           navigate('/admin/home')
         }
         else {

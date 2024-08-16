@@ -71,7 +71,8 @@ const Register = () => {
         }
       }
     } catch (error) {
-      toast.error(error.response.data.error[0].msg, { autoClose: 500, theme: 'colored' })
+      // toast.error(error.response.data.error[0].msg, { autoClose: 500, theme: 'colored' })
+      console.log(error)
 
     }
 

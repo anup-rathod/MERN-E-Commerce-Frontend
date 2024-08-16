@@ -3,20 +3,30 @@ import AliceCarousel from 'react-alice-carousel';
 import BannerData from '../../Helpers/HomePageBanner'
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { Link } from 'react-router-dom';
+
 const Carousel = () => {
     const responsive = {
         0: { items: 1 },
         568: { items: 2 },
         1024: { items: 3, itemsFit: 'contain' },
     };
-    const items = BannerData.map((item) => (
 
-        <Link to={`product/type/${item.name.toLowerCase()}`} key={item.name} >
-            <div className="item" style={{ marginTop: 10 }} >
-                <img src={item.img} loading='lazy' alt={item.name} style={{ height: '100%', width: '100%', objectFit: 'contain' }} />
+    const items = BannerData.map((item) => (
+        <Link to={`product/type/${item.name.toLowerCase()}`} key={item.name}>
+            <div className="item" style={{ marginTop: 10, padding: 10, height: '400px', overflow: 'hidden' }}>
+                <img 
+                    src={item.img} 
+                    loading='lazy' 
+                    alt={item.name} 
+                    style={{ 
+                        height: '100%', 
+                        width: '100%', 
+                        objectFit: 'cover' // Ensures images cover the container without stretching
+                    }} 
+                />
             </div>
         </Link>
-    ))
+    ));
 
     return (
         <AliceCarousel
@@ -32,7 +42,7 @@ const Carousel = () => {
             autoPlayInterval={2500}
             responsive={responsive}
         />
-    )
+    );
 }
 
-export default Carousel
+export default Carousel;

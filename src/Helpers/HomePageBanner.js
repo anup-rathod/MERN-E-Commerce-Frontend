@@ -1,32 +1,32 @@
-import { GroupCloth, Shoes, Electronics, FemaleCloth, MaleCloth, Books, Jewelry } from '../Assets/Images/Image';
+import { GroupCloth, maharastrian, Saree, Electronics, FemaleCloth, MaleCloth, Books, Jewelry } from '../Assets/Images/Image';
 const data = [
     {
-        img: GroupCloth,
-        name: "Cloths"
+        img: "../Maharastrian/img2.jpeg",
+        name: "Maharastrian"
     },
     {
-        img: Shoes,
-        name: "Shoe"
+        img: '../Oxidise/pic 18.jpg',
+        name: "Oxidise"
     },
     {
-        img: FemaleCloth,
-        name: "Cloths"
+        img: "../Oxidise/pic 2.jpg",
+        name: "Oxidise"
     },
     {
-        img: Electronics,
-        name: "Electronics"
+        img: "../Choli/pic 6.jpg",
+        name: "Choli"
     },
     {
-        img: MaleCloth,
-        name: "Cloths"
+        img: "../p6.jpeg",
+        name: "Saree"
     },
     {
-        img: Books,
-        name: "Book"
+        img: "../Choli/pic 5.jpg",
+        name: "Choli"
     },
     {
-        img: Jewelry,
-        name: "Jewelry"
+        img: '../Maharastrian/img11.jpeg',
+        name: "Maharastrian"
     },
 ]
 export default data

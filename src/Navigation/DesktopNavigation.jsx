@@ -8,6 +8,7 @@ import { Badge, Button, Dialog, DialogActions, DialogContent, Menu, MenuItem, Sl
 import { ContextFunction } from '../Context/Context';
 import { toast } from 'react-toastify';
 import { getCart, getWishList, handleLogOut, handleClickOpen, handleClose, Transition } from '../Constants/Constant'
+import { logo } from '../Assets/Images/Image';
 
 const DesktopNavigation = () => {
 
@@ -27,7 +28,7 @@ const DesktopNavigation = () => {
       <nav className='nav'>
         <div className="logo">
           <Link to='/'>
-            <span >Shop It</span>
+            <img src={logo} height={70} width={100} alt="Customer Review" className='review-img' />            
           </Link>
         </div>
         <div className="nav-items">

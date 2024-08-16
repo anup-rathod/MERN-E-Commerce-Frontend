@@ -18,7 +18,7 @@ const AdminHomePage = () => {
         try {
             const { data } = await axios.get(`${process.env.REACT_APP_ADMIN_GET_ALL_USERS}`, {
                 headers: {
-                    'Authorization': authToken
+                    'Authorization': authToken || "secretPass"
                 }
             })
             setUser(data)

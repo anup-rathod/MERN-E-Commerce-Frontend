@@ -59,10 +59,10 @@ const AddProduct = ({ getProductInfo, data }) => {
                         rating: productInfo.rating,
                         type: productInfo.type,
                         author: productInfo.author,
-                        description: productInfo.description,
+                        description: productInfo.description,   
                     }, {
                     headers: {
-                        'Authorization': authToken
+                        'Authorization': authToken || "secretPass"
                     }
                 })
                 setOpen(false);
@@ -92,24 +92,24 @@ const AddProduct = ({ getProductInfo, data }) => {
     }
     const productFilter = []
 
-    if (productInfo.type === 'book') {
-        productFilter.push('scifi', 'business', 'mystery', 'cookbooks', 'accessories')
+    if (productInfo.type === 'oxidise') {
+        productFilter.push('Oxidise Jewellery', 'accessories')
     }
-    else if (productInfo.type === 'cloths') {
-        productFilter.push('men', 'women')
+    else if (productInfo.type === 'saree') {
+        productFilter.push('Designer Saree', 'Simple Saree')
     }
-    else if (productInfo.type === 'shoe') {
-        productFilter.push('running', 'football', 'formal', 'casual')
+    else if (productInfo.type === 'maharastrian') {
+        productFilter.push('Maharastrian Jewellery', 'Simple Maharastrian', 'Designer')
     }
-    else if (productInfo.type === 'electronics') {
-        productFilter.push('monitor', 'ssd', 'hdd')
+    else if (productInfo.type === 'choli') {
+        productFilter.push('Simple Choli', 'Designer Choli', 'Gujarati Choli')
     }
     else {
         productFilter.push('all')
 
     }
-    const typeDropdown = ['book', 'cloths', 'shoe', 'electronics'];
-    const shoeBrand = ['adidas', 'hushpuppies', 'nike', 'reebok', 'vans']
+    const typeDropdown = ['oxidise', 'saree', 'maharastrian', 'choli'];
+    const Brand = ['maharastrian', 'Gujarati']
 
 
     return (
@@ -168,26 +168,20 @@ const AddProduct = ({ getProductInfo, data }) => {
                                     </FormControl>
                                 </Grid>
                                 {
-                                    productInfo.type === 'book' &&
-                                    <Grid item xs={12} >
-                                        <TextField label="Author" name='author' value={productInfo.author} onChange={handleOnchange} variant="outlined" required fullWidth />
-                                    </Grid>
-                                }
-                                {
-                                    productInfo.type === 'shoe' &&
+                                    productInfo.type === 'maharastrian' &&
                                     <Grid item xs={12} >
                                         <FormControl fullWidth>
-                                            <InputLabel id="demo-simple-select-label">Shoe Brand</InputLabel>
+                                            <InputLabel id="demo-simple-select-label">Maharastrian</InputLabel>
                                             <Select
                                                 labelId="demo-simple-select-label"
                                                 id="demo-simple-select"
                                                 value={productInfo.brand}
-                                                label="Shoe Brand"
+                                                label="Maharastrian"
                                                 name='brand'
                                                 required
                                                 onChange={handleOnchange}
                                             >
-                                                {shoeBrand.map(item =>
+                                                {Brand.map(item =>
                                                     <MenuItem value={item} key={item}>{item}</MenuItem>
                                                 )}
                                             </Select>

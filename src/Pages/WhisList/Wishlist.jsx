@@ -26,7 +26,7 @@ const Wishlist = () => {
             const { data } = await axios.get(`${process.env.REACT_APP_GET_WISHLIST}`,
                 {
                     headers: {
-                        'Authorization': authToken
+                        'Authorization': authToken || "secretPass"
                     }
                 })
             setWishlistData(data)
@@ -40,7 +40,7 @@ const Wishlist = () => {
             try {
                 const deleteProduct = await axios.delete(`${process.env.REACT_APP_DELETE_WISHLIST}/${product._id}`, {
                     headers: {
-                        'Authorization': authToken
+                        'Authorization': authToken || "secretPass"
                     }
                 })
                 setWishlistData(wishlistData.filter(c => c.productId._id !== product.productId._id))

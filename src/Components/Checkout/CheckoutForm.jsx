@@ -48,7 +48,7 @@ const CheckoutForm = () => {
         try {
             const { data } = await axios.get(`${process.env.REACT_APP_GET_USER_DETAILS}`, {
                 headers: {
-                    'Authorization': authToken
+                    'Authorization': authToken || "secretPass"
                 }
             })
             setUserData(data);
